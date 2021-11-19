@@ -1,7 +1,9 @@
 import axios from 'axios';
 
-const api = axios.create({
+ export const viaCepApi = axios.create({
   baseURL: 'https://viacep.com.br/ws'
 });
 
-export default api;
+export const brasilApi = axios.create({
+  baseURL: 'https://brasilapi.com.br/api/cep/v1/'
+})
